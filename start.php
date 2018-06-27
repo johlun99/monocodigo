@@ -6,6 +6,7 @@ echo INCLUDES;
 
 echo BODY;
 
+require_once("Content/navbar.html");
 require_once("Content/start.html");
 
 echo JS;
