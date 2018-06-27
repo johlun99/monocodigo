@@ -7,10 +7,8 @@ echo INCLUDES;
 echo BODY;
 
 require_once("Content/navbar-signed-out.html");
-require_once("Content/start.html");
+require_once("Content/sign-in.html");
 
 echo JS;
-
-echo "<script src='Javascript/test-script.js'></script>";
 
 echo END;
