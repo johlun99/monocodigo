@@ -22,9 +22,17 @@ function registerUser() {
             password: password
         },
         function(data, status) {
-            printError("Status:<br>" + status + "<br>Data:<br>" + data);
+            // printError("Status:<br>" + status + "<br>Data:<br>" + data);
+
+            data = JSON.parse(data);
+
+            if (data[0] == "Failure") {
+                printError("Failure:<br>" + data[1]);
+            } else if (data[0] == "Success") {
+                printSuccess("Success:<br>" + data[1]);
+            }
         }).done(() => {
-            alert("Registration done!");
+            
         });
 }
 

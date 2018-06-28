@@ -1,5 +1,11 @@
 function printError(msg) {
+    $(".alert").slideUp(300);
     $(".alert-danger").empty().append(msg).slideDown(300);
+}
+
+function printSuccess(msg) {
+    $(".alert").slideUp(300);
+    $(".alert-success").empty().append(msg).slideDown(300);
 }
 
 function isEmail(email) {
